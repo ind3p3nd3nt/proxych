@@ -8,5 +8,5 @@ make install;
 cd;
 cp -r /usr/bin/proxychains4 /usr/bin/proxychains;
 wget -O /etc/proxychains.conf https://github.com/ind3p3nd3nt/proxych/raw/main/proxychains.conf --no-check-certificate;
-service tor stop && systemctl enable tor && service tor start;
+systemctl enable tor && service tor start;
 echo 'now you can use: proxychains program args  to cloak your programs connections';
